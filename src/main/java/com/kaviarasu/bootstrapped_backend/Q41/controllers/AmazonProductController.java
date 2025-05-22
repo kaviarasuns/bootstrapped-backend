@@ -1,5 +1,6 @@
-package com.kaviarasu.bootstrapped_backend.Q41;
+package com.kaviarasu.bootstrapped_backend.Q41.controllers;
 
+import com.kaviarasu.bootstrapped_backend.Q41.services.IProductService;
 import com.kaviarasu.bootstrapped_backend.Q41.models.AmazonProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

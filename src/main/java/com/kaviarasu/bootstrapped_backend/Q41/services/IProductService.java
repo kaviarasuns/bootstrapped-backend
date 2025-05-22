@@ -1,4 +1,4 @@
-package com.kaviarasu.bootstrapped_backend.Q41;
+package com.kaviarasu.bootstrapped_backend.Q41.services;
 
 import com.kaviarasu.bootstrapped_backend.Q41.models.AmazonProduct;
 

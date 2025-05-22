@@ -1,4 +1,4 @@
-package com.kaviarasu.bootstrapped_backend.Q41;
+package com.kaviarasu.bootstrapped_backend.Q41.services;
 
 import com.kaviarasu.bootstrapped_backend.Q41.dtos.AmazonProductDto;
 import com.kaviarasu.bootstrapped_backend.Q41.models.AmazonProduct;
@@ -19,12 +19,17 @@ import java.util.List;
 @Service
 public class AmazonProductService implements IProductService {
 
-    private final RestTemplate restTemplate;
+    @Autowired
+    private RestTemplate restTemplate;
 
     private static final String RAPID_API_HOST = "real-time-amazon-data.p.rapidapi.com";
     private static final String BASE_URL = "https://real-time-amazon-data.p.rapidapi.com";
     private static final String RAPID_API_KEY = "b73a2f70c7mshc62f7563456f547p17ce47jsn74a8b4084a5f";
 
+    // Default constructor for Spring
+    public AmazonProductService() {}
+
+    // Constructor for manual injection (optional, for testability)
     @Autowired
     public AmazonProductService(RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
